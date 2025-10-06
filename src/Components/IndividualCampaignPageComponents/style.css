@@ -1,0 +1,172 @@
+.latest-updates {
+  margin: 0px auto;
+  width: 600px;
+}
+
+.latest-updates .card-body {
+  color: rgb(108, 108, 108);
+}
+.latest-updates button {
+  background: none;
+  border: 2px solid #d54400;
+  color: #d54400;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.latest-updates button:hover {
+  background: #d54400;
+  border: 2px solid #d54400;
+  color: #ffffff;
+}
+
+/* story highlights */
+
+.story-highlights {
+  width: 600px;
+  margin: 0px auto;
+}
+
+.story-highlights img {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  border: 8px solid black;
+}
+
+.story-highlights button {
+  background: none;
+  border: 2px solid #d54400;
+  color: #d54400;
+  border-radius: 50px;
+  padding: 5px 20px;
+  margin-bottom: 20px;
+}
+
+.story-highlights button:hover {
+  background: #d54400;
+  border: 2px solid #d54400;
+  color: #ffffff;
+}
+
+/* top influencers */
+
+.top-influencers {
+  margin: 0px auto;
+  width: 400px;
+}
+
+.top-influencers .donate-btn {
+  text-transform: uppercase;
+  background: #d54400;
+  color: #ffffff;
+  border: none;
+  width: 100%;
+  margin: 5px 10px;
+  padding: 8px;
+  border-radius: 50px;
+  line-height: 1.1;
+}
+
+#donor-icon {
+  background-color: rgb(231, 231, 231);
+  border-radius: 50%;
+  border: 1px solid rgb(161, 161, 161);
+  height: 40px;
+  width: 40px;
+  text-align: center;
+  padding: 6px 0;
+  color: black;
+}
+
+.top-influencers .card-body {
+  color: rgb(56, 56, 56);
+}
+
+/* all donations page */
+
+.all-donations .card-body {
+  color: rgb(77, 77, 77);
+}
+
+@media screen and (max-width: 1140px) {
+  .latest-updates {
+    width: 400px;
+  }
+  .story-highlights {
+    width: 400px;
+  }
+  .top-influencers {
+    width: 350px;
+  }
+}
+@media screen and (max-width: 860px) {
+  .latest-updates {
+    width: 100%;
+  }
+  .story-highlights {
+    width: 100%;
+  }
+  .top-influencers {
+    width: 100%;
+  }
+  .campaign-detail-page {
+    flex-direction: column;
+    margin: 10px;
+  }
+}
+@media screen and (max-width: 860px) {
+  #comment-input {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+/* patients documents  */
+
+.docs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.single-doc img {
+  width: 400px;
+  height: 500px;
+  border-radius: 8px;
+}
+
+.multiple-docs {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  max-width: 450px;
+  overflow: auto;
+}
+.multiple-docs img {
+  width: 100px;
+  height: 100px;
+  flex-shrink: 0;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.multiple-docs img.selected {
+  border: 4px solid green;
+}
+
+@media screen and (max-width: 470px) {
+  .multiple-docs {
+    gap: 10px;
+    max-width: 100%;
+  }
+  .single-doc img {
+    width: 100%;
+    height: 300px;
+  }
+  .doc-img-modal {
+    margin-top: 100px !important;
+  }
+}

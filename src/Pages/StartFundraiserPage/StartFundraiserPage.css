@@ -1,0 +1,13 @@
+@media (max-width: 768px) {
+  .form-and-steps-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 40px; /* reduce gap on mobile */
+  }
+
+  .side-cards,
+  .form-and-steps-container > div {
+    width: 100%;
+    max-width: 90%;
+  }
+}

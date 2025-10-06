@@ -1,0 +1,52 @@
+.progress-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-container {
+    margin: 0 auto;
+}
+
+.progress-details {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.raised-amount {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.amount-raised {
+    font-weight: bold;
+    color: #000;
+}
+
+.target-amount {
+    color: #8d8d8d;
+}
+
+.donors-count {
+    color: #8d8d8d;
+    font-size: 0.9rem;
+}
+
+.loading-spinner {
+    position: absolute;
+    /* Place it on top of content */
+    top: 50%;
+    /* Center vertically */
+    left: 50%;
+    /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+    /* Ensure it's above other content */
+}
+
+@media (max-width: 430px) {
+
+    /* .progress-circle {
+        padding-top: 2px;
+    } */
+}

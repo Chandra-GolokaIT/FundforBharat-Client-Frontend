@@ -1,0 +1,319 @@
+.custom_modal {
+  --bs-modal-width: 630px;
+  height: 98%;
+  overflow: scroll !important;
+  margin-top: 150px !important;
+  padding-bottom: 100px;
+}
+.custom_input-group {
+  height: 40px;
+  border-radius: 20px;
+  box-shadow: 0 2px 10px #0000001a;
+  transform: scale(1);
+  animation: coming 0.5s;
+}
+
+#dontgoyetmodal {
+  height: 98%;
+  margin-top: 150px;
+  overflow: scroll !important;
+  padding-bottom: 100px;
+}
+@keyframes coming {
+  0% {
+    transform: scaleX(0.4);
+  }
+  100% {
+    transform: scaleX(1);
+  }
+}
+.custom-input-group-prepend {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+}
+.custom_form-select-sm {
+  height: 30px;
+  width: 150px;
+}
+.modal-backdrop.show.custom-backdrop {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.donate_now_modal_chevronleft {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10px;
+  color: #d54400;
+  background-color: #f7f8f8;
+}
+.donate_now_modal_header-heading {
+  font-weight: 600;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+.donate_now_modal_header-button {
+  padding: 0 10px;
+  border-radius: 0;
+  border: none;
+  color: #d54400;
+  font-size: 13px;
+}
+.donate_now_modal_header-dropdown-menu {
+  min-width: 100px;
+  border-radius: 5p;
+  margin-top: 4.5px;
+}
+.donate_now_modal_body-top-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.donate_now_modal_body-top-container-container {
+  display: flex;
+  gap: 20px;
+}
+.donate_now_modal_body-top-container-btn {
+  border: none;
+  outline: none;
+  padding: 5px 26px;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: 0 2px 10px #0000001a;
+}
+.donate_now_modal_body-top-container-btn:hover {
+  background-color: #f0f0f0;
+}
+.donate_now_modal_input {
+  border: none;
+  outline: none;
+  border-left: 1px solid gray;
+  width: 300px;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+.donate_now_modal_input::-webkit-outer-spin-button,
+.donate_now_modal_input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.donate_now_modal_body-middle-container {
+  display: flex;
+  flex-direction: column;
+  background-color: #f9963a;
+  /* justify-content: center;
+    align-items: center; */
+  max-width: 380px;
+  margin: auto;
+  font-size: 13px;
+  margin-top: 25px;
+  border-radius: 10px;
+  padding: 10px;
+}
+.donate_now_model_mat-icon-container {
+  padding: 1px;
+  background-color: #d54400;
+  border-radius: 50%;
+}
+.donate_now_modal_tip-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px 0 10px 0;
+}
+.donate-now_modal_body_middle-container-lastpart-container {
+  display: flex;
+  flex-direction: column;
+  background-color: green;
+  color: white;
+  padding: 15px 15px;
+  border-radius: 20px;
+  margin: 15px 2px 4px 2px;
+  position: relative;
+  gap: 7px;
+}
+.donate-now_modal_body_middle-container-lastpart-container::before {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  left: -12px;
+  background-color: #d54400;
+  border-radius: 50%;
+}
+.donate-now_modal_body_middle-container-lastpart-container::after {
+  content: "";
+  width: 20px;
+  height: 15px;
+  position: absolute;
+  top: 50%;
+  right: -12px;
+  background-color: #d54400;
+  border-radius: 50%;
+}
+.donate-now_modal_body_middle-container-btn {
+  font-size: 10px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  border-radius: 20px;
+  color: #d54400;
+  padding: 5px 9px;
+  font-weight: bolder;
+  width: 100px;
+}
+.donate-now_modal_body_middle-container-lock-icon {
+  width: 60px;
+  position: absolute;
+  top: 20%;
+  right: 15px;
+}
+.donate-now_modal_body_middle-container-lock-icon img {
+  width: 100%;
+}
+.donate-now_modal_body_form-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 0;
+  max-width: 380px;
+  margin: 20px auto;
+}
+.donate-now_modal_body_form-container .input-data {
+  max-width: 450px;
+  position: relative;
+}
+.donate-now_modal_body_form-container .input-data input {
+  width: 100%;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  border-bottom: 2px solid silver;
+}
+.donate-now_modal_body_form-container .input-data input:focus ~ label,
+.donate-now_modal_body_form-container .input-data input:valid ~ label {
+  transform: translateY(-20px);
+  font-size: 11px;
+  color: #d54400;
+}
+.donate-now_modal_body_form-container .input-data label {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  color: grey;
+  pointer-events: none;
+  transition: all 0.3s ease;
+  font-size: 14px;
+}
+.donate-now_modal_body_form-mobile-input {
+  width: 332px !important;
+}
+
+.donate-now_modal_body_form-container .input-data .form-inputbottom-underline {
+  position: absolute;
+  bottom: 0;
+  height: 2px;
+  width: 100%;
+}
+.donate-now_modal_body_form-container
+  .input-data
+  .form-inputbottom-underline::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  transform: scaleX(0);
+  background-color: #d54400;
+  transition: transform 0.3s ease;
+}
+.donate-now_modal_body_form-container
+  .input-data
+  input:focus
+  ~ .form-inputbottom-underline::before,
+.donate-now_modal_body_form-container
+  .input-data
+  input:valid
+  ~ .form-inputbottom-underline::before {
+  transform: scaleX(1);
+}
+.donate-now_modal_body_form-container
+  .input-data
+  input::-webkit-outer-spin-button,
+.donate-now_modal_body_form-container
+  .input-data
+  input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.form-input-icon {
+  position: absolute;
+  right: 0;
+  top: 20px;
+}
+.donate-now_modal_body_form-container-btn {
+  color: white;
+  background-color: #d54400;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  box-shadow: none;
+  max-width: 280px;
+  padding: 10px 0;
+  margin-left: 45px;
+}
+.form-check {
+  margin: 29px 0;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.form-check-input {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.form-check-label {
+  font-size: 14px;
+  color: #666;
+  cursor: pointer;
+  user-select: none;
+}
+
+.form-check-input:checked {
+  background-color: #d54400;
+  border-color: #d54400;
+}
+
+@media screen and (max-width: 450px) {
+  .donate_now_modal_header-heading {
+    font-size: 16px;
+  }
+  .donate-now_modal_body_middle-container-lock-icon {
+    display: none;
+  }
+  .donate_now_modal_body-top-container-container {
+    gap: 10px;
+  }
+  .donate_now_modal_body-top-container-btn {
+    padding: 5px 13px;
+    border-radius: 0px;
+  }
+  .custom_input-group {
+    border-radius: 0px;
+  }
+  .donate_now_modal_input {
+    width: 200px;
+  }
+  .donate-now_modal_body_form-container-btn {
+    margin-left: 0px;
+  }
+  .donate-now_modal_body_form-mobile-input {
+    width: 220px !important;
+  }
+}

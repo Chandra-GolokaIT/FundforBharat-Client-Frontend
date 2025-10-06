@@ -1,0 +1,130 @@
+.youtube-share-panel {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 12px;
+    width: 480px;
+    padding: 20px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    z-index: 9999;
+    font-family: Arial, sans-serif;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    right: 12px;
+    background: none;
+    border: none;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.panel-header {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.panel-header .section-title {
+    font-weight: 700  ;
+    color: #FF6B00; /* Orange color for header text */
+}
+
+.post-header {
+    margin-bottom: 10px;
+}
+
+.title {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.create-post {
+    margin: 6px 0;
+    background: #000;
+    color: white;
+    padding: 6px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.subtitle {
+    font-size: 12px;
+    color: gray;
+}
+
+.section-title {
+    font-size: 16px;
+    margin-top: 16px;
+    margin-bottom: 10px;
+}
+
+.share-icons-container {
+    overflow-x: auto;
+    white-space: nowrap;
+    padding-bottom: 12px;
+}
+
+.share-icons {
+    display: flex;
+    gap: 12px;
+}
+
+.share-button {
+    width: 72px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+}
+
+.icon-placeholder {
+    width: 40px;
+    height: 40px;
+    background: #4CAF50; /* Green background for icons */
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 18px;
+    color: white; /* White text for better contrast */
+}
+
+.label {
+    font-size: 12px;
+    margin-top: 4px;
+    text-align: center;
+}
+
+.copy-link-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.copy-link-section input {
+    flex: 1;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 4px 0 0 4px;
+}
+
+.copy-btn {
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-left: none;
+    background: #f1f1f1;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.start-checkbox {
+    margin-top: 12px;
+    font-size: 13px;
+}

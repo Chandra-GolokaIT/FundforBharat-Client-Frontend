@@ -1,0 +1,108 @@
+.pricing-whychooseus {
+  background: url(../../assets/images/pricing-bg.jpg) no-repeat;
+  /* https://image.freepik.com/free-vector/stylish-abstract-wavy-design-background-with-red-orange-color-design_288411-533.jpg */
+  background-size: cover;
+  background-position: center;
+  padding: 50px 20px;
+}
+
+.pricing-whychooseus h1 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.pricing-cards {
+  margin-top: 30px;
+}
+
+.pricing-cards .card {
+  width: 400px;
+  height: 180px;
+}
+
+.pricing-cards .card-header {
+  background: #fff;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+
+  gap: 10px;
+  white-space: nowrap;
+}
+
+.pricing-icon {
+  color: green;
+  font-size: 40px;
+}
+
+.pricing-image {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.pricing-image button {
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 2px solid #f4580f;
+  color: #f4580f;
+
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 40px;
+}
+
+@media screen and (max-width: 1300px) {
+  .pricing-cards {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .pricing-cards .card {
+    width: 300px;
+    height: 230px;
+  }
+
+  .pricing-image img {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 656px) {
+  .pricing-cards {
+    padding: 10px;
+    flex-wrap: wrap;
+    /* Add this */
+    justify-content: space-between;
+    /* Add this */
+  }
+
+  .pricing-cards .card {
+    width: 10%;
+    /* Change from 100% to 48% for 2 per row with some gap */
+    height: auto;
+  }
+
+  .pricing-image img {
+    width: 100%;
+  }
+}
+
+
+
+/* @media screen and (max-width: 400px) {
+  .pricing-cards .card-header {
+    white-space: inherit;
+    justify-content: center;
+  }
+
+  .pricing-bootom-strip {
+    padding: 20px !important;
+  }
+} */

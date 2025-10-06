@@ -1,0 +1,99 @@
+.success-section {
+  background: #d54400; /* Background color */
+  padding: 3rem 1rem;  /* Reduced padding */
+  position: relative;
+  overflow: hidden;
+}
+
+.success-heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  color: #fff;
+}
+
+.success-carousel {
+  display: flex;
+  justify-content: center;
+}
+
+.success-card {
+  background-color: white;
+  border-radius: 20px;
+  overflow: hidden;
+  width: 90%;
+  max-width: 900px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.success-card-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.success-image-container {
+  flex: 1 1 40%;
+  min-width: 250px;
+  overflow: hidden;
+}
+
+.success-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.success-text-container {
+  flex: 1 1 60%;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.success-quote {
+  font-size: 1.1rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 1rem;
+}
+
+.success-footer {
+  margin-top: 1rem;
+}
+
+.success-author {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #000;
+}
+
+.success-org-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.25rem;
+}
+
+.success-organization {
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+.success-controls {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.success-button {
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+}

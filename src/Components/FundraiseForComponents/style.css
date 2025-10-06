@@ -1,0 +1,203 @@
+.register {
+  background: -webkit-linear-gradient(left, #d54400, #ff9665);
+  margin-top: 180px;
+  padding: 3%;
+  margin-bottom: 30px;
+}
+
+.register-form input,
+.register-form select {
+  border: none;
+  border-bottom: 2px solid #d54400;
+  border-radius: 0;
+  margin-bottom: 20px;
+}
+
+.register-left {
+  text-align: center;
+  color: #fff;
+  margin-top: 4%;
+}
+
+.register-left input {
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  width: 60%;
+  background: #f8f9fa;
+  font-weight: bold;
+  color: #383d41;
+  margin-top: 30%;
+  margin-bottom: 3%;
+  cursor: pointer;
+}
+
+.register-right {
+  background: #f8f9fa;
+  border-top-left-radius: 10% 50%;
+  border-bottom-left-radius: 10% 50%;
+}
+
+.register-left #heart-icon {
+  margin-top: 15%;
+  margin-bottom: 5%;
+  font-size: 50px;
+}
+
+.register-left p {
+  font-weight: lighter;
+  padding: 12%;
+  margin-top: -9%;
+}
+
+.register .register-form {
+  padding: 10%;
+  margin-top: 10%;
+}
+
+.btnRegister {
+  float: right;
+  margin-top: 20px;
+  border: none;
+  border-radius: 1.5rem;
+  padding: 2%;
+  background: #d54400;
+  color: #fff;
+  font-weight: 600;
+  width: 50%;
+  cursor: pointer;
+}
+
+.register .nav-tabs {
+  margin-top: 3%;
+  border: none;
+  background: #0062cc;
+  border-radius: 1.5rem;
+  width: 28%;
+  float: right;
+}
+
+.register .nav-tabs .nav-link {
+  padding: 2%;
+  height: 34px;
+  font-weight: 600;
+  color: #fff;
+  border-top-right-radius: 1.5rem;
+  border-bottom-right-radius: 1.5rem;
+}
+
+.register .nav-tabs .nav-link:hover {
+  border: none;
+}
+
+.register .nav-tabs .nav-link.active {
+  width: 100px;
+  color: #0062cc;
+  border: 2px solid #0062cc;
+  border-top-left-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
+}
+
+.register-heading {
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: -15%;
+  color: #495057;
+}
+
+/* Existing styles */
+
+/* Additional styles for custom select arrow */
+.custom-select {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+
+.custom-select select {
+  width: 100%;
+  appearance: none;
+  padding-right: 40px;
+  /* space for the arrow */
+  background-color: transparent;
+  background-image: none;
+  /* remove default arrow */
+}
+
+.custom-select::after {
+  content: "▼";
+  /* Unicode character for down arrow */
+  font-size: 15px;
+  color: #333;
+  /* arrow color */
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-60%);
+  pointer-events: none;
+  /* make sure arrow is not clickable */
+}
+
+.register-form input:focus,
+.register-form select:focus {
+  box-shadow: none;
+
+  border-bottom: 2px solid #d54400;
+}
+
+.register-left ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.register-left ul li {
+  list-style: none;
+  font-size: 20px;
+}
+
+.error-message {
+  color: red;
+  text-align: left;
+  font-size: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .register-left ul {
+    align-items: center;
+
+    gap: 10px;
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .register-left {
+    margin-top: 20px;
+  }
+
+  .register-left #heart-icon {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+  .register-left h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+
+  .register-left ul {
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .register-left ul li {
+    font-size: 16px;
+  }
+}

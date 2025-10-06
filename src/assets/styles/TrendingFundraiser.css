@@ -1,0 +1,140 @@
+.trending-fundraiser-page {
+  margin: 50px 50px;
+}
+
+.trending_fundraiser {
+  width: 100%;
+  height: 100%;
+}
+
+.trending_fundraiser .card {
+  border: 1px solid #e3e3e3;
+  border-radius: 18px;
+  overflow: hidden;
+  background: #fff;
+  width: 100%;
+  height: 350px;
+  margin: 0 0px !important;
+}
+
+.carousel-item-padding {
+  margin-right: 10px;
+}
+
+.trending_fundraiser .img-wrapper img {
+  border-radius: 18px;
+  height: 120px;
+  object-fit: cover;
+}
+
+.trending_fundraiser .content-section {
+  padding: 10px;
+}
+
+.trending_fundraiser .title {
+  padding-bottom: 10px;
+  font-size: 14px;
+  font-weight: bold;
+  /* margin-bottom: 8px; */
+}
+
+.trending_fundraiser .profile-details {
+  display: flex;
+  align-items: center;
+}
+
+.trending_fundraiser .avatar-wrapper {
+  height: 32px;
+  width: 32px;
+  margin-right: 8px;
+}
+
+.trending_fundraiser .avatar-img {
+  border-radius: 50%;
+  height: 100%;
+  width: 100%;
+}
+
+.trending_fundraiser .name {
+  font-size: 14px;
+}
+
+.trending_fundraiser .raised-amnt {
+  font-size: 12px;
+  margin: 8px 0;
+  font-weight: 600;
+}
+
+.trending_fundraiser .outof {
+  color: #ff5733;
+}
+
+.trending_fundraiser .progress-bar .progress {
+  /* background-color: #f8c471; */
+  background: linear-gradient(to right, #a8e6cf 0%, #0b4d0d 100%);
+  height: 6px;
+  border-radius: 3px;
+}
+
+.trending_fundraiser .widget-footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 3px;
+}
+
+.trending_fundraiser .widget-footer .items {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 12px;
+}
+
+.trending_fundraiser .share-buttons {
+  display: flex;
+  justify-content: start;
+  padding: 10px;
+}
+
+.trending_fundraiser .btn-fb,
+.primary-btn {
+  background-color: #4267b2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 24px;
+  cursor: pointer;
+}
+
+.trending_fundraiser .btn-fb .text {
+  margin-left: 4px;
+}
+
+.trending_fundraiser .primary-btn {
+  background-color: #ff5733;
+}
+
+@media screen and (max-width: 1120px) {
+  .trending-fundraiser-page {
+    margin: 50px 20px;
+  }
+}
+
+@media screen and (max-width: 610px) {
+
+  /* .trending-fundraiser-page {
+    margin: 50px auto;
+  } */
+  .carousel-item-padding {
+    margin-right: 20px;
+  }
+}
+
+@media screen and (max-width: 465px) {
+  .carousel-item-padding {
+    margin: 0px;
+  }
+
+  .trending_fundraiser .card {
+    width: 100%;
+  }
+}

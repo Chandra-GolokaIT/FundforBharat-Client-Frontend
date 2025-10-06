@@ -1,0 +1,211 @@
+.calculator-section {
+  position: relative;
+  padding: 20px;
+  z-index: 1;
+  /* background-color: rgba(255, 255, 255, 0.9);  */
+  border-radius: 10px;
+  max-width: 100%;
+  margin: 0 auto;
+  /* box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); */
+  /* color: #333;  */
+  /* font-weight: 500;  */
+}
+
+.calc-card {
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4.5px);
+  -webkit-backdrop-filter: blur(4.5px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  display: flex;
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  margin: 0 auto;
+  gap: 140px;
+}
+
+.calc-card p {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.calc-card .calc-card-header {
+  margin-left: 40px;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  max-width: 40%;
+  margin-top: 40px;
+}
+
+.calc-card-footer {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.progress-bar-container {
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 46%;
+}
+
+#progress-input {
+  width: 120px;
+  /* Fixed width for input */
+}
+
+.calculator-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url('../../assets/images/calc-Bg8.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+  z-index: -1;
+  border-radius: 10px;
+  filter: none;
+
+}
+
+/* .btn-primary {
+  background-color: #007bff;
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+
+} */
+
+.btn-primary {
+  background-color: #007bff;
+  /* blue */
+  border: none;
+  padding: 10px 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  /* darker blue */
+}
+
+
+
+h3 {
+  color: white;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Add these to your existing CSS file */
+
+/* Mobile-first responsive styles */
+@media (max-width: 768px) {
+  .calculator-section {
+    padding: 15px;
+    width: 100%;
+  }
+
+  .calculator-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+
+  .calculator-section p.text-center {
+    font-size: 0.9rem;
+    margin-bottom: 20px;
+  }
+
+  .progress-bar-container {
+    width: 100%;
+    padding: 20px 15px;
+  }
+
+  .d-flex.align-items-center.justify-content-center.gap-4 {
+    flex-direction: column;
+    gap: 15px !important;
+    align-items: flex-start;
+  }
+
+  .d-flex.align-items-center.justify-content-center.gap-4 p {
+    margin-bottom: 0;
+  }
+
+  .d-flex.align-items-center.justify-content-center.gap-3 {
+    flex-direction: column;
+    gap: 15px !important;
+  }
+
+  .d-flex.align-items-center.justify-content-center.gap-3>div {
+    width: 100% !important;
+  }
+
+  #progress-input {
+    width: 100%;
+  }
+
+  .input-group .form-control {
+    width: 100% !important;
+  }
+
+  .calc-card {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .calc-card-header,
+  .calc-card-footer {
+    margin: 0 !important;
+    max-width: 100% !important;
+    padding: 15px;
+  }
+
+  .calc-card p {
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+  }
+
+  .text-center.mt-3 button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+  }
+
+  /* Adjust slider for mobile */
+  .MuiSlider-root {
+    padding: 8px 0 !important;
+  }
+}
+
+/* For very small screens */
+@media (max-width: 480px) {
+  .calculator-section {
+    padding: 10px;
+  }
+
+  .calculator-section h3 {
+    font-size: 1.3rem;
+  }
+
+  .progress-bar-container {
+    padding: 15px 10px;
+  }
+
+  .calc-card {
+    padding: 15px 10px;
+  }
+}
+
+/* Keep your existing styles for larger screens */

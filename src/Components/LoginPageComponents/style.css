@@ -1,0 +1,274 @@
+/* Center and background container */
+.login-page-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../../assets/images/bgLogin2.jpeg") no-repeat center center/cover;
+  padding: 40px 10px;
+  flex-wrap: wrap;
+  gap: 40px;
+}
+
+/* Glassmorphism effect */
+.login-page-leftpart {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(8, 8, 8, 0.3);
+  border-radius: 15px;
+  padding: 40px 30px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.3);
+  color: white;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Remove border color from inside elements */
+.login-page-leftpart input {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+}
+
+.login-page-leftpart .placeholders {
+  color: #141414;
+}
+
+.login-page-leftpart button {
+  background-color: #f15913;
+  color: white;
+}
+
+/* Hide image on small screens */
+.login-page-imagecontainer {
+  display: none;
+}
+.login-page-leftpart-companynamecontainer {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  margin-left: -15px;
+}
+.login-page-leftpart-companyname {
+  font-weight: bold;
+  color: #f15913;
+  padding: 0;
+  margin: 0;
+}
+.login-page-leftpart-company_imaginarythinking {
+  color: #f15913;
+  padding: 0;
+  margin: 0;
+}
+.login-page-leftpart-login_heading {
+  font-size: 25px;
+  font-weight: bolder;
+  padding-top: 10px;
+  padding-bottom: 0px;
+}
+.login-page-leftpart-editmobilenolink {
+  align-self: flex-start;
+  color: #f15913;
+  font-weight: bold;
+}
+.login-page-leftpart-agreement {
+  font-size: 10px;
+}
+.login-page-leftpart-notgetotp {
+  font-size: 12px;
+  margin-top: 5px;
+}
+.login-page-leftpart-getotpbtn {
+  border: none;
+  outline: none;
+  box-shadow: none;
+  color: white;
+  background-color: #f15913;
+  border-radius: 5px;
+  margin: 25px 0;
+  font-weight: bold;
+  font-size: 21px;
+  align-self: stretch;
+  padding: 9px 0;
+  margin-top: 4px;
+}
+.login-page-leftpart-OR-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.login-page-leftpart-OR-container div {
+  position: absolute;
+  width: 100%;
+  border: 1px solid;
+  top: 40%;
+}
+.login-page-leftpart-OR {
+  font-weight: bold;
+  color: gray;
+  background-color: white;
+  z-index: 2;
+  padding: 0 3px;
+}
+.login-page-leftpart-otherloginoptions-container {
+  margin-top: 10px;
+  display: flex;
+  gap: 60px;
+}
+.login-page-leftpart-otherloginoptions-container img {
+  width: 30px;
+}
+.login-page-imagecontainer {
+  width: 500px;
+  height: 420px;
+  margin-right: 50px;
+}
+#scrollable-dropdown {
+  max-height: 50px;
+  overflow-y: auto;
+  position: absolute;
+  z-index: 1000;
+  width: 10%;
+  margin-top: 0;
+  width: 500px;
+}
+
+@media screen and (max-width: 768px) {
+  .login-page-imagecontainer {
+    display: none;
+  }
+}
+
+/* Input styling */
+.custom-field {
+  position: relative;
+  font-size: 14px;
+  border-top: 20px solid transparent;
+  margin-bottom: 5px;
+  display: inline-block;
+  --field-padding: 12px;
+  width: 100%;
+}
+
+.custom-field input {
+  border: none;
+  -webkit-appearance: none;
+  -ms-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: #f2f2f2;
+  padding: var(--field-padding);
+  border-radius: 3px;
+  width: 100%;
+  outline: none;
+  font-size: 16px;
+  border-radius: 5px;
+  color: black;
+}
+.two {
+  align-self: stretch;
+  margin-top: -5px;
+}
+.two input {
+  width: 100%;
+}
+
+.custom-field input::-webkit-outer-spin-button,
+.custom-field input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+.custom-field.three input:not(:placeholder-shown),
+.custom-field.three input.dirty {
+  border-color: #f15913;
+}
+
+.custom-field.three input:not(:placeholder-shown) + .placeholders,
+.custom-field.three input.dirty + .placeholders {
+  top: 0;
+  font-size: 13px;
+  color: #f15913;
+  background: #fff;
+  width: auto;
+}
+.custom-field .placeholders {
+  position: absolute;
+  left: var(--field-padding);
+  width: calc(100% - (var(--field-padding) * 2));
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 17px;
+  font-weight: bold;
+  top: 22px;
+  line-height: 100%;
+  transform: translateY(-50%);
+  color: #0e0d0d88;
+  transition: top 0.3s ease, color 0.3s ease, font-size 0.3s ease;
+}
+.password-field {
+  display: flex;
+  align-items: center;
+
+  position: relative;
+  width: 100%;
+}
+.custom-field.three input {
+  position: relative;
+  width: 100%;
+}
+.eye-symbol {
+  margin-top: 10px;
+  position: absolute;
+  right: 10px;
+  cursor: pointer;
+  color: #4f4f4f;
+}
+
+.custom-field.one input,
+.custom-field.two input,
+.custom-field.three input {
+  background: none;
+  border: 2px solid #ddd;
+  transition: border-color 0.3s ease;
+}
+
+.custom-field.one input + .placeholders,
+.custom-field.two input + .placeholders,
+.custom-field.three input + .placeholders {
+  left: 8px;
+  padding: 0 5px;
+}
+
+.custom-field.one input.dirty,
+.custom-field.one input:not(:placeholder-shown),
+.custom-field.one input:focus,
+.custom-field.two input:focus,
+.custom-field.three input:focus {
+  border-color: #f15913;
+  transition-delay: 0.1s;
+}
+
+.custom-field.one input.dirty + .placeholders,
+.custom-field.one input:not(:placeholder-shown) + .placeholders,
+.custom-field.one input:focus + .placeholders,
+.custom-field.two input:not(:placeholder-shown) + .placeholders,
+.custom-field.two input:focus + .placeholders,
+.custom-field.three input:focus + .placeholders {
+  top: 0;
+  font-size: 13px;
+  color: #f15913;
+  background: #fff;
+  width: auto;
+}
+
+@media screen and (max-width: 420px) {
+  .custom-field.one input {
+    width: 200px;
+  }
+  .custom-field .placeholders {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,348 @@
+/* Testimonial Section Custom CSS */
+@import url('https://fonts.googleapis.com/css2?family=Cedarville+Cursive&display=swap');
+
+.cedarville-cursive-regular {
+  font-family: "Cedarville Cursive", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.testimonial-section {
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 1rem;
+  background-color: #ffffff;
+}
+
+/* Decorative elements */
+.testimonial-section .decorative-wave {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 25%;
+  height: 100%;
+}
+
+.testimonial-section .decorative-icon {
+  position: absolute;
+  top: 5rem;
+  right: 5rem;
+  width: 6rem;
+  height: 6rem;
+}
+
+/* Header styling */
+.testimonial-header {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.testimonial-subheader {
+  display: flex;
+  text-align: center;
+  margin-bottom: 3rem;
+  position: relative;
+  z-index: 10;
+}
+
+.testimonial-header .divider1 {
+  flex-direction: column;
+  width: 5rem;
+  height: 2px;
+  background-color: #f5b70d;
+  margin: 0 0 0 auto;
+}
+
+.testimonial-header .divider2 {
+  flex-direction: column;
+  width: 5rem;
+  height: 2px;
+  background-color: #f5b70d;
+  margin: 0 auto 0 0;
+}
+
+.testimonial-header .subtitle {
+  color: #f5b70d;
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.testimonial-subheader .title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #1a202c;
+  margin: auto;
+  margin-top: 0.5rem;
+}
+
+/* Content container */
+.testimonial-content {
+  max-width: 80rem;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
+
+.testimonial-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-container {
+    flex-direction: row;
+    align-items: center;
+  }
+}
+
+/* Left side - Image */
+.testimonial-image-container {
+  position: relative;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-image-container {
+    width: 50%;
+  }
+}
+
+.testimonial-rating {
+  position: absolute;
+  /* top: 1rem; */
+  left: 0;
+  z-index: 10;
+  background-color: #0c7c59;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem 1rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-left: 72px;
+  color: #fff;
+  font-weight: bold;
+}
+
+
+.testimonial-rating .star {
+  color: #f5b70d;
+  font-size: 1.25rem;
+  margin-right: 0.25rem;
+}
+
+.testimonial-rating .value {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.testimonial-image-wrapper {
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+  overflow: hidden;
+  background-color: #f5b70d;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Right side - Content */
+.testimonial-text-container {
+  background-color: #fff9e6;
+  border-radius: 0.5rem;
+  padding: 2rem;
+}
+
+@media (min-width: 1024px) {
+  .testimonial-text-container {
+    width: 50%;
+  }
+}
+
+.testimonial-quote {
+  color: #4a5568;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.testimonial-quote::before {
+  content: "";
+  position: absolute;
+  top: -1.5rem;
+  left: -0.5rem;
+  font-size: 6rem;
+  color: #0c7c59;
+  opacity: 0.2;
+}
+
+.testimonial-quote-text {
+  position: relative;
+  z-index: 10;
+  font-size: 1.125rem;
+}
+
+.testimonial-author {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.testimonial-author-info .name {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #1a202c;
+}
+
+.testimonial-author-info .title {
+  color: #718096;
+}
+
+.testimonial-decorative-icon {
+  color: #0c7c59;
+  width: 3rem;
+  height: 3rem;
+}
+
+/* Navigation */
+.testimonial-navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.testimonial-buttons {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-button {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  border: 1px solid #cbd5e0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.nav-button:hover {
+  background-color: #f7fafc;
+}
+
+.nav-button .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  color: #4a5568;
+}
+
+.testimonial-indicators {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-count {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: #0c7c59;
+}
+
+.testimonial-progress {
+  width: 8rem;
+  height: 0.25rem;
+  background-color: #e2e8f0;
+  position: relative;
+  margin: 0 1rem;
+}
+
+.testimonial-progress-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0.25rem;
+  background-color: #f5b70d;
+}
+
+.testimonial-total {
+  color: #a0aec0;
+}
+
+/* Scroll to top button */
+.scroll-top-button {
+  position: absolute;
+  bottom: 2rem;
+  right: 2rem;
+  width: 3rem;
+  height: 3rem;
+  border-radius: 9999px;
+  background-color: #0c7c59;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.scroll-top-button:hover {
+  background-color: #096647;
+}
+
+.scroll-top-button .icon {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .testimonial-quote-text {
+    font-size: 0.95rem;
+    line-height: 1.4;
+    max-height: 8rem;
+    /* Limits the height */
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    /* Limits to 6 lines */
+    -webkit-box-orient: vertical;
+  }
+
+  .testimonial-text-container {
+    padding: 1.25rem;
+  }
+
+  .testimonial-image-wrapper {
+    width: 100%;
+    height: auto;
+    max-height: 18rem;
+  }
+
+  .testimonial-image {
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .testimonial-subheader .title {
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #1a202c;
+    margin: auto;
+    margin-top: 0.5rem;
+  }
+}

@@ -1,0 +1,15 @@
+@media screen and (max-width: 400px) {
+  #affiliate-container {
+    height: auto !important;
+    padding: 10px !important;
+  }
+  #affiliate-container button {
+    width: 100% !important;
+  }
+}
+@media screen and (max-width: 780px) {
+  #affiliate-form {
+    width: auto !important;
+    padding: 20px 0 !important;
+  }
+}

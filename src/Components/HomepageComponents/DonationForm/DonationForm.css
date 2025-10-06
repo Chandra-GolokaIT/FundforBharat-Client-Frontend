@@ -1,0 +1,69 @@
+/* Center the first modal and give it responsive width */
+.custom-modal {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  padding-top: 80px;
+  overflow-y: auto;
+}
+
+.custom-modal .modal-dialog {
+  width: 800px;
+  max-width: 95%;
+  margin-top: 80px;
+}
+
+.custom-modal .modal-content {
+  padding: 30px;
+}
+
+/* Donation Form Modal (second modal) */
+.custom-modal2 .modal-dialog {
+  max-width: 700px;
+  width: 90%;
+  margin: auto;
+}
+
+.custom-modal2 .modal-content {
+  max-height: 90vh;
+  /* Ensures content fits in viewport */
+  overflow-y: auto;
+  /* Enables scroll if content exceeds height */
+  padding: 30px;
+  border-radius: 10px;
+}
+
+/* Optional: prevent double scrollbars */
+body.modal-open {
+  overflow: hidden;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 870px) {
+  .modal-heading {
+    font-size: 18px !important;
+    font-weight: bold;
+  }
+
+  .custom-modal img {
+    height: 250px !important;
+  }
+
+  .modal-label {
+    font-size: 16px;
+  }
+
+  .modal-input {
+    font-size: 14px;
+    padding: 8px 10px !important;
+  }
+
+  .custom-modal2 .modal-dialog {
+    max-width: 95%;
+    margin: 0 10px;
+  }
+
+  .custom-modal2 .modal-content {
+    padding: 20px;
+  }
+}

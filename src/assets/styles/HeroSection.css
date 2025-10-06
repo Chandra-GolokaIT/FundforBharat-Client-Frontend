@@ -1,0 +1,56 @@
+.full-slider-wrapper {
+  width: 100%;
+  height: 100vh;
+  /* Full viewport height on desktop */
+  overflow: hidden;
+  position: relative;
+}
+
+/* Mobile view */
+@media (max-width: 1024px) {
+  .full-slider-wrapper {
+    margin-top: 20px;
+    height: 40vh;
+    /* Reduced height for mobile */
+  }
+}
+
+/* change */
+@media (max-width: 768px) {
+  .full-slider-wrapper {
+    margin-top: 65px;
+    height: 22vh;
+    /* Reduced height for mobile */
+  }
+
+  .full-slider-wrapper-pricing {
+    height: 22vh;
+    margin-top: 0px;
+  }
+
+  .full-slider-wrapper-gempage{
+    height: 30vh;
+    margin-top: 80px;
+  }
+}
+
+.hero-slider,
+.full-width-swiper,
+.swiper,
+.swiper-wrapper,
+.swiper-slide {
+  width: 100%;
+  height: 100%;
+}
+
+.full-slider-image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  display: block;
+  border-radius: 0 !important;
+  border: none !important;
+  outline: none !important;
+}
+
+/* Remove all button-related styles since we're hiding it */

@@ -1,0 +1,502 @@
+.gem-page-container {
+  position: relative; /* Ensure relative positioning for child elements */
+  min-height: 100vh; /* Ensure page takes up at least viewport height */
+}
+
+.discount-strip {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #147a56;
+  color: #fff;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  padding: 5px 20px;
+  padding-top: 5px;
+  width: 500px;
+  text-align: center;
+  box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.1);
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.strip-content {
+  transition: opacity 0.2s ease-in-out;
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+.fade-out {
+  opacity: 0;
+}
+.gem-hero-section {
+  background: #dd591c;
+  position: relative;
+  overflow: hidden;
+}
+
+.gem-strip {
+  display: flex;
+  justify-content: center;
+  background-color: #147a56;
+  color: #fff;
+  padding: 11px;
+  align-items: center;
+  gap: 10px;
+  text-transform: capitalize;
+  position: absolute;
+  top: 150px;
+  width: 100%;
+}
+
+.gem-strip-icon {
+  background-color: #ffffff;
+  color: #dd591c;
+  border: 2px solid white;
+  height: 40px;
+  width: 40px;
+  font-size: 25px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gem-img {
+  background: #dd591c;
+}
+
+.gem-content {
+  width: 100%;
+  padding: 50px;
+}
+
+.gem-content h1 {
+  font-size: 50px;
+  font-weight: 600;
+  font-style: italic;
+  color: #ffe15f;
+}
+
+.gem-content h3 {
+  font-weight: 600;
+  font-style: italic;
+  margin-bottom: 80px;
+  color: #fff;
+}
+
+.price-slider {
+  color: #fff;
+}
+
+.gem-content button {
+  background: linear-gradient(to right top, #147a56, rgba(32, 229, 114, 0.6)),
+    linear-gradient(to left bottom, #147a56, #147a56);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  margin-top: 50px;
+  white-space: nowrap;
+}
+
+/* save patients section */
+.save-patient-content button {
+  background: linear-gradient(to right top, #147a56, rgba(32, 229, 114, 0.6)),
+    linear-gradient(to left bottom, #147a56, #147a56);
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  font-weight: 600;
+  text-transform: uppercase;
+  padding: 10px;
+  white-space: nowrap;
+}
+
+.save-patient-img {
+  width: 600px;
+  height: 400px;
+  border-radius: 20px;
+}
+
+.save-patient-content h1 {
+  color: rgb(75, 75, 75);
+  font-weight: bold;
+}
+
+.save-patient-content p {
+  font-weight: 600;
+}
+.save-patient {
+  margin: 50px;
+  color: rgb(75, 75, 75);
+  font-weight: 600;
+}
+
+/* gem-features section */
+
+.gem-features {
+  background: #fafafa;
+  padding: 20px;
+}
+
+.gem-features-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  padding: 50px;
+}
+
+.gem-features-card .card {
+  padding: 20px;
+  width: 500px;
+  border: none;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.gem-features-card .card img {
+  width: 100px;
+}
+
+.gem-features-card .card h4:first-of-type {
+  color: #dd591c;
+  font-weight: bold;
+}
+
+.gem-features-card .card h4:last-of-type {
+  color: #565656;
+  font-size: 20px;
+}
+
+/* gem slider section */
+
+.gem-slider-section {
+  background: #dd591c;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 400px;
+  margin-bottom: 300px;
+}
+
+.gem-slider-heading {
+  top: 20px;
+  position: absolute;
+  margin: 30px 0;
+}
+.gem-slider {
+  width: 75% !important;
+  position: absolute !important;
+  top: 30%;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px !important;
+}
+
+.gem-slide-btn {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.gem-slide {
+  display: flex !important;
+  flex-direction: row-reverse;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  gap: 20px;
+  height: auto !important;
+}
+
+.gem-slide img {
+  height: 500px !important;
+  width: 550px !important;
+}
+.gem-slide h2 {
+  font-weight: bold;
+  color: #565656;
+  margin-bottom: 20px;
+}
+
+.gem-slide p {
+  color: #565656;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Existing CSS omitted for brevity */
+
+.arrow-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 50%;
+  padding-left: 8px;
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+}
+
+.arrow-prev {
+  left: -80px;
+}
+
+.arrow-next {
+  right: -80px;
+}
+
+/* price slider of hero section */
+
+.price-slider {
+  border-top: 2px dashed white;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  position: relative;
+}
+
+.price-pointer {
+  height: 10px;
+  width: 10px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.price-slider-items {
+  position: absolute;
+  display: flex;
+  gap: 50px;
+  top: -30%;
+}
+
+.gem-tooltip {
+  position: absolute;
+  display: inline-block;
+  border-bottom: 1px dotted #ffe15f;
+  bottom: 60px;
+}
+
+.gem-tooltip .tooltiptext {
+  background-color: #ffe15f;
+  color: #000;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  height: 50px;
+  width: 300px;
+  z-index: 1;
+  bottom: 150%;
+  font-size: 13px;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.gem-tooltip .tooltiptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 20%;
+  margin-left: -5px;
+  border-width: 8px;
+  border-style: solid;
+  border-color: #ffe15f transparent transparent transparent;
+}
+
+/* Modal1 css start */
+@media screen and (min-width: 768px) {
+  .gem-custom-modal1 {
+    --bs-modal-width: 760px;
+  }
+}
+/* Modal1 css end */
+
+@media screen and (max-width: 1300px) {
+  .gem-img img {
+    width: 500px;
+    height: 600px;
+  }
+  .save-patient-img {
+    width: 400px;
+    height: 450px;
+  }
+  .save-patient {
+    margin: 30px;
+  }
+}
+
+@media screen and (max-width: 1240px) {
+  .gem-slider {
+    width: 80% !important;
+  }
+
+  .gem-slide img {
+    height: 500px !important;
+    width: 450px !important;
+  }
+
+  .gem-slide p {
+    margin-bottom: 0px;
+  }
+  .gem-content {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 940px) {
+  .gem-slider-section {
+    margin-bottom: 400px;
+  }
+  .gem-slider {
+    height: auto !important;
+    width: 90% !important;
+    margin-top: 20px;
+  }
+  .gem-slide {
+    flex-direction: column;
+  }
+
+  .gem-slide img {
+    height: 300px !important;
+    width: 100% !important;
+  }
+
+  .gem-slide p {
+    margin-bottom: 0px;
+  }
+  .gem-content {
+    padding: 15px !important;
+  }
+  .arrow-btn {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1008px) {
+  .gem-img img {
+    width: 400px;
+    height: 600px;
+  }
+  .save-patient {
+    flex-direction: column;
+    padding: 20px !important;
+  }
+  .save-patient-img {
+    width: 100%;
+    height: 400px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .gem-hero-section {
+    flex-direction: column;
+  }
+
+  .gem-img img {
+    width: 100%;
+    padding: 0 !important;
+    height: 600px;
+  }
+
+  .gem-content {
+    width: 100%;
+    padding: 50px;
+  }
+
+  .gem-features-card {
+    gap: 20px;
+    padding: 0px !important;
+  }
+}
+@media screen and (max-width: 670px) {
+  .gem-strip {
+    top: 22%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .gem-img img {
+    height: 400px;
+  }
+
+  .gem-content {
+    width: 100%;
+    padding: 20px;
+  }
+  .price-slider-items {
+    gap: 30px;
+  }
+  .price-slider {
+    width: 250px;
+  }
+  .gem-hero-section h1 {
+    font-size: 30px;
+  }
+  .gem-strip {
+    font-size: 15px;
+  }
+  .gem-strip-icon {
+    padding: 0 2px !important;
+  }
+  .save-patient {
+    padding: 0px !important;
+    margin: 20px;
+    gap: 20px !important;
+  }
+  .save-patient-img {
+    width: 100%;
+    height: 300px;
+  }
+  .gem-features-card {
+    margin: 0 !important;
+  }
+  .gem-features-card .card {
+    width: 100%;
+    flex-direction: column;
+    margin: 0 !important;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .gem-slider-section {
+    height: auto !important;
+    margin-bottom: 0px !important; /* reduce from 300px to give space */
+    padding-bottom: 10px; /* ensures spacing below */
+    position: relative !important;
+  }
+
+  .gem-slider {
+    position: static !important; /* prevent overlap */
+    top: auto !important;
+    margin-top: 100px;
+    width: 100% !important;
+    box-shadow: none !important;
+  }
+
+  .gem-slide {
+    flex-direction: column !important;
+  }
+
+}
+

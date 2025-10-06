@@ -1,0 +1,60 @@
+.crisis-detail-page {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.detail-header {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.detail-image {
+  max-width: 500px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.detail-info {
+  flex: 1;
+}
+
+.action-section {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.donate-box, .volunteer-box {
+  flex: 1;
+  min-width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  background: #f9f9f9;
+}
+
+.donate-btn, .volunteer-btn {
+  background-color: #ff6b6b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.volunteer-form input,
+.volunteer-form textarea,
+.donation-input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 12px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.volunteer-form textarea {
+  min-height: 80px;
+  resize: vertical;
+}

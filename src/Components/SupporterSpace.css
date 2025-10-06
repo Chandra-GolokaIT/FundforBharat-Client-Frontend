@@ -1,0 +1,269 @@
+/* SupporterSpace.css */
+
+.supporter-space {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f8fffe;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header-section {
+  background: linear-gradient(135deg, #c8e6c9 0%, #a8d8a8 100%);
+  padding: 60px 40px;
+  margin-bottom: 40px;
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text h1 {
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: #2c3e50;
+  margin: 0 0 20px 0;
+  line-height: 1.2;
+}
+
+.header-text p {
+  font-size: 1.25rem;
+  color: #34495e;
+  line-height: 1.6;
+  margin: 0;
+  max-width: 500px;
+}
+
+.header-image {
+  flex-shrink: 0;
+}
+
+.header-image img {
+  width: 350px;
+  height: 350px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+/* Popular Section */
+.popular-section {
+  max-width: 1200px;
+  margin: 0 auto 60px auto;
+  padding: 0 40px;
+}
+
+.popular-section h2 {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+.popular-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.popular-card {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popular-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
+}
+
+.card-number {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #00B964;
+  flex-shrink: 0;
+  width: 40px;
+}
+
+.card-content h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: #7f8c8d;
+}
+
+.author-icon {
+  display: flex;
+  align-items: center;
+}
+
+/* Navigation Tabs */
+.nav-tabs {
+  max-width: 1200px;
+  margin: 0 auto 40px auto;
+  padding: 0 40px;
+  display: flex;
+  gap: 8px;
+  border-bottom: 1px solid #e1e8ed;
+}
+
+.tab {
+  background: none;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #7f8c8d;
+  cursor: pointer;
+  border-radius: 8px 8px 0 0;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.tab:hover {
+  color: #2c3e50;
+  background-color: #f8f9fa;
+}
+
+.tab.active {
+  color: #2c3e50;
+  background-color: #2c3e50;
+  color: white;
+  border-radius: 20px;
+}
+
+/* Featured Section */
+.featured-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px 60px 40px;
+}
+
+.featured-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.featured-card {
+  background: white;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.featured-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+.card-image {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.featured-card:hover .card-image img {
+  transform: scale(1.05);
+}
+
+.card-info {
+  padding: 24px;
+}
+
+.card-info h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.card-info p {
+  font-size: 1rem;
+  color: #7f8c8d;
+  line-height: 1.5;
+  margin: 0 0 16px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .header-content {
+    flex-direction: column;
+    text-align: center;
+    gap: 40px;
+  }
+  
+  .header-text h1 {
+    font-size: 2.5rem;
+  }
+  
+  .header-image img {
+    width: 250px;
+    height: 250px;
+  }
+  
+  .popular-grid,
+  .featured-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .nav-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .header-section,
+  .popular-section,
+  .featured-section,
+  .nav-tabs {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .header-text h1 {
+    font-size: 2rem;
+  }
+  
+  .header-text p {
+    font-size: 1.1rem;
+  }
+  
+  .popular-card {
+    padding: 16px;
+  }
+  
+  .card-info {
+    padding: 16px;
+  }
+}

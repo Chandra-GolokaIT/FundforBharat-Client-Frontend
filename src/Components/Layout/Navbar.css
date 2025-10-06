@@ -1,0 +1,152 @@
+/* Improved mobile view styling with centered alignment */
+@media (max-width: 990px) {
+  #res-search {
+    display: none !important;
+  }
+  .nav-btn-profile {
+    margin-left: 10px;
+  }
+
+  /* Keep the top navbar row fixed */
+  .container-fluid {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    position: relative;
+  }
+
+  .navbar-brand {
+    margin-right: auto;
+  }
+
+  .mobile-currency-container {
+    order: 1;
+    margin-right: 10px;
+    position: relative;
+    z-index: 1001;
+  }
+
+  .navbar-toggler {
+    order: 2;
+    position: relative;
+    z-index: 1001;
+  }
+
+  /* Make the collapsible content appear below the fixed top row */
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background-color: var(--bs-body-bg, #fff);
+    border-top: 1px solid rgba(0,0,0,.125);
+    z-index: 1000;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+  }
+
+  .navbar-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar-nav .nav-link,
+  .dropdown-menu .dropdown-item {
+    padding: 0.5rem 1rem;
+    text-align: center;
+    padding-left: 5rem;
+    word-break: break-word;
+    width: 100%;
+  }
+
+  .dropdown-menu.show {
+    padding: 0;
+    text-align: center;
+  }
+
+  .dropdown-list {
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+
+  .profile-dropdown-item {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    width: max-content;
+    min-width: 200px;
+    text-align: center;
+  }
+
+  .nav-btn {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-buttons {
+    display: flex;
+    justify-content: space-around;
+    padding-left: 10rem;
+  }
+
+  /* Adjust dropdown positioning for mobile */
+  .dropdown-toggle::after {
+    margin-left: 0.5em;
+    vertical-align: 0.15em;
+  }
+
+  /* Ensure the navbar has proper height to contain the absolute positioned collapse */
+  .navbar {
+    min-height: 80px; /* Adjust based on your brand image height */
+  }
+}
+
+/* Desktop-specific styles (optional adjustments) */
+@media (min-width: 992px) {
+  .mobile-currency-container {
+    display: none !important;
+  }
+}
+
+/* General styles (applies to all views) */
+.initials-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background-color: #d54400;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 8px;
+}
+
+.profile-image {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.dropdown-content {
+  text-align: left;
+}
+
+.dropdown-content h6 {
+  margin-bottom: 0.2rem;
+  font-weight: 600;
+}
+
+.dropdown-content span {
+  font-size: 0.8rem;
+  color: #6c757d;
+}
+
+ /* another code for the center (not optimized) */
+
+ 

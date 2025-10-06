@@ -1,0 +1,191 @@
+/* Donation Form Styles */
+.donation-form-overlay {
+  position: fixed;
+  top: 120px; /* Push down from the top by 80px */
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Change from center to flex-start */
+  z-index: 1000;
+  padding: 20px; /* Optional padding */
+}
+
+.donation-form-container {
+  background-color: white;
+  border-radius: 10px;
+  width: 90%;
+  max-width: 600px;
+  max-height: calc(90vh - 100px); /* Adjust height */
+  overflow-y: auto;
+  padding: 20px;
+  margin-top: 20px; /* Additional space from top */
+}
+
+.donation-form-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.donation-form-header h2 {
+  color: #147a56;
+  margin: 0;
+}
+
+.close-btn {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: #666;
+}
+
+.donation-form-subtitle {
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.donation-options {
+  margin-bottom: 25px;
+}
+
+.transaction-details {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+  font-size: 0.9rem;
+}
+
+.tax-benefit {
+  color: #147a56;
+  font-weight: bold;
+}
+
+.amount-selection {
+  margin-top: 20px;
+}
+
+.amount-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.amount-option {
+  background-color: #f5f5f5;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 8px 15px;
+  cursor: pointer;
+}
+
+.amount-option.active {
+  background-color: #147a56;
+  color: white;
+  border-color: #147a56;
+}
+
+.plan-selection {
+  margin-top: 20px;
+}
+
+.plan-card {
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  padding: 15px;
+  margin-top: 10px;
+}
+
+.auto-debit {
+  font-size: 0.9rem;
+  color: #666;
+  margin: 10px 0;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.form-group input, 
+.form-group select {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.phone-input {
+  display: flex;
+}
+
+.phone-input select {
+  width: 30%;
+  margin-right: 10px;
+}
+
+.phone-input input {
+  flex: 1;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.radio-group label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.submit-btn {
+  background-color: #147a56;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.special-offer {
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #fff8e1;
+  border-radius: 8px;
+  position: relative;
+}
+
+.offer-tag {
+  position: absolute;
+  top: -10px;
+  right: 15px;
+  background-color: #ff5722;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 10px;
+  font-size: 0.8rem;
+}
+
+.discount {
+  color: #ff5722;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.gem-hero-section.form-open {
+  margin-top: 250px; /* Adjust this value as needed */
+}

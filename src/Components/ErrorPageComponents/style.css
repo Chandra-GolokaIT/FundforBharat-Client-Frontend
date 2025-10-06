@@ -1,0 +1,244 @@
+.error-banner-section {
+  background: rgb(250, 233, 210);
+  margin-top: 150px;
+  padding: 30px;
+  gap: 30px;
+  width: 100%;
+  height: 200px;
+}
+
+.error-banner-section img {
+  width: 200px;
+  height: auto;
+}
+
+.error-content {
+  width: 75%;
+}
+
+.error-content h2 {
+  color: #d54400;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+.error-content h5 {
+  font-weight: 00;
+  /* margin-bottom: 20px; */
+}
+
+.donate-button {
+  /* background: #d54400; */
+  border: none;
+  /* color: #fff; */
+  padding: 10px;
+  border-radius: 5px;
+  width: 15%;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.error-404 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  gap: 50px;
+  text-align: center;
+}
+
+.error-404 img {
+  width: 700px;
+  height: 400px;
+}
+
+.error-404 h5 {
+  font-weight: 600;
+}
+
+@media screen and (max-width: 1055px) {
+  .error-banner-section {
+    flex-direction: column;
+  }
+  .error-content {
+    width: 100%;
+  }
+
+  .error-404 img {
+    width: 100%;
+    height: auto;
+  }
+  .error-404 {
+    margin: 10px;
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .error-banner-section {
+    flex-direction: column;
+  }
+  .error-content {
+    width: 100%;
+  }
+  .error-banner-section img {
+    width: 100%;
+    height: 250px;
+  }
+}
+
+/* Error page 3rd Component */
+.erorpage-redirects-section-container {
+  background-color: #f5f5f5;
+  padding: 30px 10px;
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  align-items: center;
+}
+.mobile-video {
+  width: 260px;
+  position: relative;
+  flex-shrink: 0;
+}
+.mobile-video .video {
+  position: absolute;
+  top: 20px;
+  left: 22px;
+  height: 447px;
+  width: 82%;
+  border-radius: 10px;
+}
+
+.mobile-video img {
+  width: 100%;
+}
+.redirects-container {
+  width: 650px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.redirect {
+  background-color: #d54400;
+  padding: 10px 30px;
+  height: 70px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 5px;
+}
+.redirect-leftpart {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  color: white;
+  font-size: 16px;
+}
+.redirect-content {
+  line-height: 16px;
+}
+.redirect-rightpart {
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 5px 20px;
+  font-size: 14px;
+  display: flex;
+  gap: 15px;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.redirect-rightpart a {
+  color: green;
+  text-decoration: none;
+}
+.redirect-arrow-container {
+  position: relative;
+}
+.redirect-rightpart:hover .redirect-arrow-container {
+  animation: redirect-arrow-move 0.8s infinite;
+}
+
+/* {_---------------------------------------------Help Pages code---------------------------------------------} */
+.helppages-container {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  background-image: url("../../assets/images/BGI7.jpeg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+}
+
+.corner-image {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+}
+
+.top-left {
+  top: 0;
+  left: 0;
+}
+
+.top-right {
+  top: 0;
+  right: 0;
+}
+
+.bottom-left {
+  bottom: 0;
+  left: 0;
+}
+
+.bottom-right {
+  bottom: 0;
+  right: 0;
+}
+
+.center-left {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.center-right {
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+/* -----------------------------------------------Help pages code------------------------------------------------ */
+
+@keyframes redirect-arrow-move {
+  0% {
+    left: 0px;
+  }
+  50% {
+    left: 8px;
+  }
+  100% {
+    left: 0px;
+  }
+}
+@media screen and (max-width: 900px) {
+  .mobile-video {
+    display: none;
+  }
+  .redirect-content {
+    font-size: 14px;
+  }
+}
+@media screen and (max-width: 424px) {
+  .redirect {
+    padding: 10px 15px;
+  }
+  .redirect-rightpart {
+    font-size: 12px;
+    padding: 5px 10px;
+    gap: 10px;
+  }
+}

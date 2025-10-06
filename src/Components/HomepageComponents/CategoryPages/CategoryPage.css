@@ -1,0 +1,118 @@
+/* Base section spacing */
+section {
+    padding: 5rem 4rem;
+  }
+  
+  .home-container,
+  .category-page {
+    padding: 2rem;
+    font-family: sans-serif;
+  }
+  
+  /* Grid for categories */
+  .category-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+  }
+  
+  /* Category cards */
+  .category-box {
+    width: 120px;
+    text-align: center;
+    padding: 1rem;
+    background: #f9f9f9;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+  }
+  
+  .category-box:hover {
+    background: #eee;
+  }
+  
+  /* Button style */
+  .start-btn {
+    background: #0a7c42;
+    color: white;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  
+  /* Intro section on category pages */
+  .category-page .intro {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  /* Fundraiser card grid */
+  .fundraiser-grid .fundraisers {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+  }
+  
+  /* Individual fundraiser card */
+  .card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 12px;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Fundraiser title */
+  .card h3 {
+    margin: 10px 0 4px;
+    font-size: 1.1rem;
+    color: #000;
+    font-weight: bold;
+  }
+  
+  /* Fundraiser location - now correctly styled and positioned */
+  .card .location {
+    position:relative;
+    font-size: 0.85rem;
+    color: #777;              /* Soft muted gray */
+    text-align: center;
+    display: block;
+  }
+  
+  /* Fundraiser image */
+  .card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  /* Raised amount */
+  .card .raised {
+    margin-top: 8px;
+    font-weight: 500;
+    color: #333;
+  }
+  
+  
+.progress-bar {
+  height: 6px;
+  background-color: #666968;
+  border-radius: 4px;
+}
+  
+.progress-bar-container {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 7px 19px 0px;
+  border-radius: 10px;
+}
+  .progress-bar div {
+    width: 80%;
+    height: 100%;
+    background: #666968;
+  }
+  

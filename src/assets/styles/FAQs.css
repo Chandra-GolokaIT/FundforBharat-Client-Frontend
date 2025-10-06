@@ -1,0 +1,143 @@
+/* Accordians */
+
+.heading-border {
+  width: 100px;
+  height: 8px;
+  background-color: #d54400;
+}
+
+.accordion {
+  width: 70%;
+  margin: 0 auto;
+}
+
+.accordion-item {
+  border: none;
+  border-bottom: 2px solid #dee2e6;
+}
+.accordion-body {
+  border-left: 4px solid #d54400;
+}
+
+.accordion-button {
+  font-size: 17px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: unset;
+  color: #d54400 !important;
+  border: none;
+  box-shadow: none;
+  font-weight: 700;
+}
+
+.accordion-button:not(.collapsed):focus {
+  background-color: unset;
+  color: #000;
+  border: none;
+  outline: none;
+  box-shadow: none;
+}
+
+.accordion-button:not(.collapsed):hover {
+  background-color: unset;
+  color: #000;
+  border: none;
+  box-shadow: none;
+}
+
+@media screen and (max-width: 480px) {
+  .accordion {
+    width: 100%;
+    margin: 0 auto;
+  }
+  .questions-container ul li {
+    padding: 15px !important;
+  }
+  .answer-container {
+    padding: 20px !important;
+  }
+}
+
+.faq-main-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.faq-container {
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.questions-container ul {
+  display: flex;
+  flex-direction: column;
+
+  gap: 10px;
+}
+.questions-container ul h3 {
+  font-weight: 600;
+  color: rgb(7, 76, 7);
+}
+.questions-container ul li {
+  list-style: none;
+  background: #fff;
+  color: rgb(7, 76, 7);
+  font-weight: 600;
+  border: 1px solid rgb(211, 211, 211);
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.answer-container {
+  width: 500px;
+  height: auto;
+  background-color: #ee530b;
+  color: #fff;
+  font-weight: bold;
+  padding: 30px;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: opacity 0.3s ease;
+}
+
+.answer-container h3 {
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  margin-bottom: 20px;
+}
+
+.answer-container.visible {
+  opacity: 1;
+}
+
+.answer-container.hidden {
+  opacity: 0;
+}
+
+.active-faq {
+  background: #000000 !important;
+  color: #fff !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media screen and (max-width: 780px) {
+  .faq-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+  }
+  .answer-container {
+    width: auto;
+  }
+  .questions-container ul {
+    padding: 0 !important;
+  }
+}

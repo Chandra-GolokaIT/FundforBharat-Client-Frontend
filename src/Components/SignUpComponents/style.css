@@ -1,0 +1,271 @@
+body,
+html {
+  height: 100%;
+
+}
+
+.signup-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh;
+    margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: url('../../assets/images/bgLogin2.jpeg') no-repeat center center fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signup-form {
+  backdrop-filter: blur(15px);
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(31, 38, 135, 0.37);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 700px; 
+  padding: 40px 50px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+  z-index: 10;
+}
+
+.signup-form input {
+  background: rgba(0, 0, 0, 0.623);
+  border: none;
+  color: #fff;
+  margin-bottom: 10px; /* was 15px */
+  padding: 10px;
+  border-radius: 8px;
+  width: 100%;
+  backdrop-filter: blur(5px);
+  transition: background-color 0.3s ease;
+}
+
+/* Fix placeholder visibility */
+.signup-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Fix for autofill (Chrome/WebKit) */
+.signup-form input:-webkit-autofill,
+.signup-form input:-webkit-autofill:hover,
+.signup-form input:-webkit-autofill:focus,
+.signup-form input:-internal-autofill-selected {
+  -webkit-text-fill-color: #fff !important;
+  transition: background-color 9999s ease-in-out 0s;
+  caret-color: white;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  box-shadow: 0 0 0 1000px rgba(255, 255, 255, 0.1) inset;
+}
+
+/* Focus style for contrast */
+.signup-form input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #f15913;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.signup-form-continue-btn button {
+  background-color: #f15913;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.signup-form-continue-btn button:hover {
+  background-color: #d9480f;
+}
+
+/* Responsive - optional but useful */
+@media screen and (max-width: 600px) {
+  .signup-form {
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
+
+#progressbar {
+  margin-bottom: 30px;
+  overflow: hidden;
+  color: lightgrey;
+  margin-left: 20px;
+}
+
+#progressbar .active {
+  color: #f15913;
+}
+
+#progressbar li {
+  list-style-type: none;
+  font-size: 15px;
+  width: 30%;
+  float: left;
+  position: relative;
+  font-weight: 400;
+}
+
+#progressbar #step1:before {
+  content: "1";
+}
+
+#progressbar #step2:before {
+  content: "2";
+}
+
+#progressbar #step3:before {
+  content: "3";
+}
+
+#progressbar li:before {
+  width: 30px;
+  height: 30px;
+  line-height: 35px;
+  display: block;
+  font-size: 20px;
+  color: #ffffff;
+  background: lightgray;
+  border-radius: 50%;
+  margin: 0 auto 10px auto;
+  padding: 0px;
+}
+
+#progressbar li:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  background: lightgray;
+  position: absolute;
+  left: 0;
+  top: 15px;
+  z-index: -1;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+  background: #f15913;
+}
+
+.signup-cause {
+  background: rgb(250, 233, 210);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.signup-cause h6 {
+  font-size: 20px;
+  color: rgb(61, 61, 61);
+}
+
+.signup-cause button {
+  background: #ffffff;
+  border: 1px solid rgb(221, 221, 221);
+  color: #f15913;
+}
+
+.signup-cause button:hover {
+  background: #ffffff !important;
+  border: 1px solid rgb(221, 221, 221) !important;
+  color: #f15913 !important;
+}
+
+.signup-cause button:active {
+  background: #ffffff !important;
+  border: 1px solid rgb(221, 221, 221) !important;
+  color: #f15913 !important;
+}
+
+.country-code button:hover {
+  background: none !important;
+  color: grey;
+}
+
+.signup-form-continue-btn button {
+  background-color: #f15913;
+  color: #ffffff;
+  border: none;
+  font-weight: 600;
+  font-size: 20px;
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  text-align: center;
+}
+.scrollable-dropdown{
+  max-height: 200px; 
+  overflow-y: auto; 
+  position: absolute;
+  z-index: 1000;
+  width: 10%; 
+  margin-top: 0;
+}
+
+@media screen and (max-width: 1170px) {
+  .signup-form {
+    width: auto;
+  }
+  .signup-container img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .signup-cause button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .signup-cause h6 {
+    font-size: 16px !important;
+  }
+}
+
+@media screen and (max-width: 785px) {
+  .signup-container {
+    flex-direction: column;
+    justify-content: center !important;
+    align-items: center !important;
+  }
+  .signup-cause {
+    flex-direction: column;
+  }
+  .signup-form {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .signup-container img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  #progressbar {
+    margin-left: 0px;
+  }
+
+  .signup-form-continue-btn button {
+    padding: 5px;
+  }
+  .is-patient {
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  .radio-inputs {
+    flex-direction: column !important;
+    gap: 20px !important;
+    margin-left: 20px;
+  }
+}

@@ -1,0 +1,99 @@
+.edit-profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+  background-color: #f5f6fa;
+}
+.profile-preview-image {
+  object-fit: cover;
+  border: 2px solid #d54400;
+}
+.edit-profile-card {
+  background-color: #fff;
+  padding: 30px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.edit-profile-title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.edit-profile-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.preview-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.circular-preview {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px ;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+.edit-profile-form label {
+  font-weight: 500;
+  color: #444;
+  font-size: 0.95rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.edit-profile-form input {
+  margin-top: 6px;
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.edit-profile-form input:focus {
+  border-color: #007bff;
+  outline: none;
+}
+
+.edit-profile-button {
+  margin-top: 10px;
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.edit-profile-button:hover {
+  background-color: #0056b3;
+}
+
+.edit-profile-message {
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 15px;
+}
+
+.edit-profile-loading {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: #555;
+}
