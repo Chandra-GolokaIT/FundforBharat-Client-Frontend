@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./styles.css";
-import JobViewerPopup from "./JobViewerP
-opup"; // Adjust path as needed
+import JobViewerPopup from "./JobViewerPopup"; // Adjust path as needed
 
 function HeroSection({ jobRef }) {
   const [isPopupVisible, setIsPopupVisible] = useState(false);
